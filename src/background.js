@@ -15,7 +15,7 @@ function createWindow() {
         },
         menu: null
     })
-    mainWindow.loadURL(process.env.IS_ELECTRON?'http://localhost:3000':`file://${__dirname}/index.html`)
+    mainWindow.loadURL(process.env.IS_ELECTRON?'http://43.153.37.66:3000':`file://${__dirname}/index.html`)
     mainWindow.on('closed', function() {
         mainWindow = null
     })

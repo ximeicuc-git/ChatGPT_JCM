@@ -22,10 +22,7 @@ module.exports = defineConfig({
   devServer: {
     host: '43.153.37.66',
     hot: true,//自动保存
-    port: 3000,
-    client: {
-      webSocketURL: 'ws://43.153.37.66:3000/ws' 
-    }
+    port: 3000
   },
   pluginOptions: {
     electronBuilder: {

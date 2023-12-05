@@ -20,8 +20,12 @@ module.exports = defineConfig({
   transpileDependencies: true,
   publicPath: './', // 设置资源文件的根路径
   devServer: {
+    host: '43.153.37.66',
     hot: true,//自动保存
-    port: 3000
+    port: 3000,
+    client: {
+      webSocketURL: 'ws://43.153.37.66:3000/ws' 
+    }
   },
   pluginOptions: {
     electronBuilder: {

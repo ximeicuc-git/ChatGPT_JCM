@@ -20,7 +20,8 @@ module.exports = defineConfig({
   transpileDependencies: true,
   publicPath: './', // 设置资源文件的根路径
   devServer: {
-    hot: true//自动保存
+    hot: true,//自动保存
+    port: 3000
   },
   pluginOptions: {
     electronBuilder: {
